@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Roman'), local('Avenir-Roman'),
+        url('fonts/Avenir-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Light'), local('Avenir-Light'),
+        url('fonts/Avenir-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: local('Avenir Book Oblique'), local('Avenir-BookOblique'),
+        url('fonts/Avenir-BookOblique.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Black Oblique';
+    src: local('Avenir Black Oblique'), local('Avenir-BlackOblique'),
+        url('fonts/Avenir-BlackOblique.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Heavy'), local('Avenir-Heavy'),
+        url('fonts/Avenir-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Heavy Oblique'), local('Avenir-HeavyOblique'),
+        url('fonts/Avenir-HeavyOblique.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Medium Oblique'), local('Avenir-MediumOblique'),
+        url('fonts/Avenir-MediumOblique.woff2') format('woff2');
+        font-weight: 500;
+        font-style: italic;
+    }
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Light Oblique'), local('Avenir-LightOblique'),
+        url('fonts/Avenir-LightOblique.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: local('Avenir Book'), local('Avenir-Book'),
+        url('fonts/Avenir-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Black'), local('Avenir-Black'),
+        url('fonts/Avenir-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Oblique'), local('Avenir-Oblique'),
+        url('fonts/Avenir-Oblique.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('fonts/Avenir-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body, :root {
+    font-family: 'Avenir', Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+img#magnifier{
+    width: 5%;
+    max-width: 43px;
+    /* height: 75px; */
+    margin-right: 5%;
+    border: none;
+    vertical-align: middle;
+}
+h1 input {
+    font-size: .8em;
+    font-weight: 500;
+}
+input#q {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 90%;
+    color: #000;
+}
+select {
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.15em;
+    border: none;
+    border-bottom: 1px #ddd solid;
+    height: 3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url("images/dropdown-arrow.png") no-repeat right;
+}
+select#sort-by {
+    font-size: 2em;
+    background-image: url('images/dropdown-arrow-big.png');
+    height: 1.8em;
+    border-bottom-width: 2px;
+}
+#title-bar form {
+    margin: 2em 0 4em;
+}
+aside h2 {
+    font-weight: normal;
+    color: #888;
+    font-size: 1em;
+}
+.container {
+    max-width: 1370px;
+}
+#shop-icon {
+    top: 10px;
+    right: 73px;
+    z-index: 101;
+  }
+#cart-icon {
+    /* background: url("images/cart.png") no-repeat; */
+    height: 32px;
+    width: 32px;
+}
+
+#navbarNavAltMarkup {
+    z-index: 100;
+    text-align: center;
+}
+@media (min-width:992px) {
+    .in-collapsed {
+        display: none;
+    }
+    .hidden-lg {
+        display: none;
+    }
+}
+
+@media (max-width:991px) {
+    #filters a.btn {
+        display: block;
+        border: none;
+        width: 100%;
+        color: #000;
+        background: #fff url("images/dropdown-arrow-big.png") no-repeat right 10px;
+        border-bottom: 2px solid #ddd;
+        text-align: left;
+        font-size: 1.5em;
+    }
+    #filters a.btn.focus, #filters a.btn:focus {
+        box-shadow: none;
+        border-radius: 0;
+    }
+    #pagination .wide {
+        display: none;
+    }
+    .navbar-brand img {
+        border-radius: 88px 0 0 0;
+    }
+    #title-bar h1 input {
+        font-size: .5em;
+        padding-bottom: 8px;
+    }
+    #title-bar select {
+        font-size: 1.35em;
+        height: 2.8em;
+    }
+    #sort-by {
+        height: auto;
+    }
+    #Filters {
+        display: none;
+    }
+}
+
+#main-nav {
+    /* margin: auto; */
+    padding: 0;
+    height: 71px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+ul#pagination {
+    list-style: none;
+    /*display: inline;
+    height: 71px;
+    
+    font-family: 'Avenir', Arial, Helvetica, sans-serif;*/
+    padding: 0 0 0 15px;
+}
+.navbar {
+    font-weight: 500;
+}
+.navbar li{
+/*     display: inline-block; */
+    margin: 0 2em 0 .4em;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light.navbar li.active > a.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1em;
+}
+#customer {
+    text-align: right;
+    margin-left: 153px;
+}
+#page-list li {
+    display: inline;
+}
+#page-list li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    color: #000;
+    text-decoration: none;
+}
+
+#slidecontainer {
+    width:100%;
+  }
+.slider-color {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity:0.7;
+    -webkit-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+.slider-color:hover {
+    opacity:1;
+}
+.slider-color::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 2px #000 solid;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+.slider-color::-moz-range-thumb {
+    width: 17px;
+    height: 17px;
+    border: 2px #000 solid;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+#slidecontainer p {
+    clear: both;
+    margin-top: 15px;
+}
+
+#slidecontainer span {
+    display: block;
+    margin-top: 5px;
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+#slidecontainer .left {
+    float: left;
+    clear: left;
+}
+
+#slidecontainer .right {
+    float: right;
+    text-align: right;
+    clear: right;
+}
+
+ul.item-details {
+    list-style: none;
+/*     padding: 0; */
+}
+.item-details .photo {
+    text-align: center;
+}
+.item-details img {
+    max-width: 100%;
+}
+.item-details li.left {
+    width: 50%;
+    float: left;
+    clear: left;
+    margin-left: 20px;
+}
+
+/* .item-details li.newline {
+} */
+
+.item-details li.right {
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.item-details .item-name{
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1.25em;
+}
+
+.item-details .type {
+    font-weight: normal;
+    font-size: .7em;
+    color: #888;
+}
+
+.item-details .price {
+    margin-top: 8px;
+    font-size: 1.3em;
+}
+.item-details .grade {
+    /* text-indent: -10000px; */
+    width: 52px;
+    height: 21px;
+    background: transparent url(images/StarOn.png) space center;
+}
+.item-details .grade.four {
+    width: 52px;
+}
+
+.item-details .grade.five {
+    width: 63px;
+}
+.item-details .grade span {
+    display: inline-block;
+    font-size: 1px;
+    line-height: 17px;
+    height: 11px;
+    color: #fff;
+}
+.item-details .grade.four span {
+    width: 21px;
+    margin-left: 45px;
+    background: transparent url(images/Star.png) no-repeat top right;
+}
+
+#pagination {
+    margin-top: 1em;
+}
+
+#pagination li {
+    display: inline-block;
+    margin-right: 2em;
+    font-weight: 500;
+}
+  
+#pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+#pagination a.active {
+    background-color:black;
+    color: white;
+}
+  
+#pagination a:hover:not(.active) {
+    background-color: #ddd;
+}

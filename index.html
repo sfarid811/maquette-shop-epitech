@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My furnitures’ shop</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white pl-0 pt-0 text-uppercase" id="main-nav">
+                <a class="navbar-brand p-0" href="#"><img src="images/Logo.png" width="71" height="71" alt="My furnitures’shop logo"></a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav col-sm-9">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Magazine</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto text-uppercase">
+                        <span style="padding-right: 15px;"><a class="nav-link" href="#" title="Create account or log in">Login</a></span>
+                    </div>
+                </div>
+                <div class="navbar-nav navbar-text position-absolute" id="shop-icon">
+                    <a class="nav-link" href="#" title="My cart" id="cart-icon"><img src="images/cart.png" alt="Cart"></a>
+                </div>
+        </nav>
+          <!-- <div class="row">
+            <ul class="menu text-uppercase col-sm">
+                <li class="logo"><a href="#" title="Back to homepage"><img src="images/Logo.png" alt="My furnitures’ shop logo" /></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Magazine</a></li>
+            </ul>
+            <ul id="customer" class="menu text-uppercase col-sm">
+                <li><a href="#" title="My cart"><img src="images/cart.png" alt="Cart"></a></li>
+                <li><a href="#" title="Create account or log in">Login</a></li>
+
+            </ul>
+        </div> -->
+        <div class="container">
+            <div class="row" id="title-bar">
+            <div class="col-sm-9">
+                <form>
+                    <h1><img src="images/Search.png" alt="Search" id="magnifier"><input type="text" size="10" maxlength="255" id="q" name="q" value="living room" aria-label="Search"> </h1></form>
+            </div>
+            <div class="col-sm-3">
+                <form>
+                    <select id="sort-by" name="sort-by">
+                    <option value="match">Best match</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="price">Price</option>
+                    </select>
+                  </form><!-- <p>Best match</p> -->
+            </div>
+        </div>
+        </div>
+        
+    </header>
+    <main class="container">
+        <div class="row">
+            <aside class="col-sm-3" id="filters">
+                <a class="btn hidden-lg" data-toggle="collapse" href="#Filters" role="button" aria-expanded="false" aria-controls="Filters">
+                Filters</a>
+                <form class="collapse show" id="Filters">
+                    <h2 class="text-uppercase">Filter by</h2>
+                    <select id="collection" name="collection">
+                        <option value="collection">Collection</option>
+                        <option value="2018">2018</option>
+                        <option value="2018">2019</option>
+                        <option value="2018">2020</option>
+                    </select>
+                    <select id="color" name="color">
+                        <option value="color">Color</option>
+                        <option value="white">White</option>
+                        <option value="grey">Grey</option>
+                        <option value="black">Black</option>
+                    </select>
+                    <select id="category" name="category">
+                        <option value="category">Category</option>
+                        <option value="lounge">Lounge</option>
+                        <option value="table">Table</option>
+                        <option value="chairs">Chairs</option>
+                    </select>
+                    <fieldset id="slidecontainer">
+                        <p>Price Range</p>
+                        <p>min 
+                            <input class="slider-color" type="range" min="0" max="10000" value="0" step="10">
+                            <span class="left">$0</span>
+                            <span class="right">$10000</span>
+                        </p>
+                        <p>max 
+                            <input class="slider-color" type="range" min="100" max="10000" value="10000" step="10">
+                            <span class="left">$100</span>
+                            <span class="right">$10000+</span>
+                        </p>
+                    </fieldset>
+                </form>
+            </aside>
+            <ul class="item-details col-sm-3">
+                <li class="photo "><img src="images/coombes.png" alt="Coombes, lounge"></li>
+                <li class="item-name left">Coombes<br>
+                    <span class="type text-uppercase">Lounge</span></li>
+                <li class="price right">$2,600</li>
+                <li class="grade left four"><span class="four">4/5</span></li>
+                <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+            </ul>
+            <ul class="item-details col-sm-3">
+                <li class="photo "><img src="images/keeve_set.png" alt="Keeve Set, table & chairs"></li>
+                <li class="item-name left">Keeve Set<br>
+                <span class="type text-uppercase">Table & chairs</span></li>
+                <li class="price right">$590</li>
+                <li class="grade left four"><span class="four">4/5</span></li>
+                <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+            </ul>
+            <ul class="item-details col-sm-3">
+                <li class="photo "><img src="images/nille.png" alt="Nillè, armchair"></li>
+                <li class="item-name left">Nillè<br>
+                    <span class="type text-uppercase">Armchair</span></li>
+                <li class="price right">$950</li>
+                <li class="grade left five"><span class="five">5/5</span></li>
+                <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+            </ul>
+       </div>
+       <div class="row">
+            <ul class="item-details col-sm-3">
+                <li class="photo "><img src="images/blanko.png" alt="Blanko, side table"></li>
+                <li class="item-name left">Blanko<br>
+                    <span class="type text-uppercase">Side table</span></li>
+                <li class="price right">$90</li>
+                <li class="grade left four"><span class="four">4/5</span></li>
+                <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+            </ul>
+        <ul class="item-details col-sm-3">
+            <li class="photo "><img src="images/momo.png" alt="Momo, shelves"></li>
+            <li class="item-name left">Momo<br>
+                <span class="type text-uppercase">Shelves</span></li>
+            <li class="price right">$890</li>
+            <li class="grade left four"><span class="four">4/5</span></li>
+            <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+        </ul>
+        <ul class="item-details col-sm-3">
+            <li class="photo "><img src="images/pennemille.png" alt="Penemillè, chair"></li>
+            <li class="item-name left">Penemillè<br>
+                <span class="type text-uppercase">Chair</span></li>
+            <li class="price right">$120</li>
+            <li class="grade left four"><span class="four">4/5</span></li>
+            <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+        </ul>
+        <ul class="item-details col-sm-3">
+            <li class="photo "><img src="images/kappu.png" alt="Kappu, shelves"></li>
+            <li class="item-name left">Kappu<br>
+                <span class="type text-uppercase">Shelves</span></li>
+            <li class="price right">$420</li>
+            <li class="grade left four"><span class="four">4/5</span></li>
+            <li class="cart right"><a href="#" title="Add to cart"><img src="images/cart-add.png" alt="Add to cart"></a></li>
+        </ul>
+   </div>   
+    </main>
+    <footer class="container">
+        <div class="row">
+            <ul id="pagination">
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="wide"><a href="#">5</a></li>
+                <li class="wide"><a href="#">6</a></li>
+                <li class="wide"><a href="#">7</a></li>
+                <li class="wide"><a href="#">8</a></li>
+                <li class="wide"><a href="#">9</a></li>
+                <li class="wide"><a href="#">10</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
